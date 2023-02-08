@@ -657,6 +657,7 @@ header{
     color: #202027;
 }
 .why_item{
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: repeat(3, 1fr);
@@ -677,4 +678,7 @@ header{
 }
 .type_title{
     margin-top: 210px;
+}
+.chenreasew{
+    margin-left: 671px;
 }
