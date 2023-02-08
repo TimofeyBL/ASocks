@@ -656,29 +656,123 @@ header{
     margin-top: 200px;
     color: #202027;
 }
-.why_item{
+.why_item_sec{
+    width: 1150px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: repeat(3, 1fr);
     grid-gap: 70px;
-    border: 1px solid black;
+    margin-top: 80px;
 }
 .why_item_img::after{
     position: absolute;
     content: "";
-    top: calc();
-    left: 0;
-    width: 0;
-    height: 0;
+    top: ;
+    left: ;
+    right: calc(50% - 10px);
+    width: 66px;
+    height: 95px;
     background-image: url('../imgs/why.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 0;
+    background-size: cover;
+}
+/*<section class="Section type">
+                        <h1 class="type_title">Pay as you go — pay only for<br> the traffic you <span class="type_green">actually use</span></h1>
+                        <p class="type_text">No verification needed. All it takes is 1 minute to sign up <br> and start using our proxies.</p>
+                        <div class="type_item"></div>
+                    <div class="type_img">
+                        <p1 class="type_img_traf">640 Gb</p1>
+                        <p2 class="type_img_pay">$1920</p2>
+                    </div>
+            </section>*/
+.section_type{
+    width: 1200px;
+    background-color: #c2c7ce ;
 }
 .type_title{
     margin-top: 210px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 51px;
+    color: #202027;
 }
-.chenreasew{
-    margin-left: 671px;
+.type_green{
+    color: #16E09E;
+}
+.type_text{
+    margin-top: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #202027;
+}
+.type_item{
+    margin-top: 32px;
+    background-image: url('../imgs/prog.svg');
+    Width: 365px;
+    Height: 108px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.type_item::after{
+    position: absolute;
+    content: "";
+    top: ;
+    left: ;
+    right: ;
+    bottom: ;
+    width: 72px;
+    height: 26px;
+    background-image: url('../imgs/gb.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.type_item::before{
+    position: absolute;
+    content: "";
+    top: ;
+    left: ;
+    right: ;
+    width: 62px;
+    height: 26px;
+    background-image: url('../imgs/bucks.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.type_img{
+    background-image: url('../imgs/proggs.svg');
+    Width: ;
+    Height: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.type_img_traf{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #7C4EFF;
+}
+.type_img_pay{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #7C4EFF;
 }
