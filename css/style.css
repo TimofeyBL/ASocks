@@ -396,18 +396,6 @@ header{
 .section_features{
     margin-top: 250px;
 }
-
-
-/* <div class="features_grid">
-    <div class="features_item"></div>
-    <div class="features_item"></div>
-    <div class="features_item"></div>
-    <div class="features_item"></div>
-    <div class="features_item"></div>
-    <div class="features_item"></div>
-    <div class="features_item"></div>
-    <div class="features_item"></div>
-</div> */
 .features_title{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -561,26 +549,6 @@ header{
 
     border-radius: 20px;
 }
-
-/*.get_proxy{
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 56px;
-    width: 190px;
-    text-decoration: none;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
-    background: linear-gradient(230.52deg, #926BFF 21.73%, #7C4EFF 72.58%);
-    box-shadow: 0px 8px 6px -6px rgba(86, 76, 234, 0.6), 0px 14px 12px -8px rgba(86, 76, 234, 0.6), 0px 22px 24px -16px rgba(86, 76, 234, 0.6);
-    border-radius: 12px;
-    color: #FFFFFF;
-    user-select: none;
-    cursor: pointer;
-}*/
 .partners_earn {
     position: relative;
     display: block;
@@ -612,38 +580,6 @@ header{
     background-position: center;
     background-size: cover;
 }
-/*<section class="section_why">
-                <h1 class="why_title">Why businesses choose us</h1>
-                <ul>
-                    <li class="why_item">
-                        <div class="why_item_img"></div>
-                        <h2 class="why_item_title">Attitude</h2>
-                        <p class="why_item_desk">We work hard every day to make your experience<br>of using our solutions as positive as possible</p>
-                    </li>
-                    <li class="why_item">
-                        <div class="why_item_img"></div>
-                        <h2 class="why_item_title">Custom Solutions</h2>
-                        <p class="why_item_desk">We are developing solutions to serve your business<br>goals. New features are being released every week</p>
-                    </li>
-                    <li class="why_item">
-                        <div class="why_item_img"></div>
-                        <h2 class="why_item_title">Constantly Growing Pool</h2>
-                        <p class="why_item_desk">Expanding coverage and adding more IPs is one<br>of our most highest priorities</p>
-                    </li>
-                    <li class="why_item">
-                        <div class="why_item_img"></div>
-                        <h2 class="why_item_title">Proven Success</h2>
-                        <p class="why_item_desk">99%+ successful connection rate and high response<br>speed at all times</p>
-                    </li>
-                    <li class="why_item">
-                        <div class="why_item_img"></div>
-                        <h2 class="why_item_title">24/7 Support</h2>
-                        <p class="why_item_desk">Our support manager will walk you through and will<br>make sure you are satisfied with the product. If you have<br>any question, our support is ready 24/7 to resolve it.</p>
-                    </li>
-                    <li class="why_item">
-                        <div class="why_item_img"></div>
-                        <h2 class="why_item_title">Clean IPs</h2>
-                        <p class="why_item_desk">We have our own proxy infrastructure so you can be sure<br>your IPs are not banned</p>*/
 .section_why{
     font-family: 'Montserrat', sans-serif;
 }
@@ -665,28 +601,39 @@ header{
     grid-gap: 70px;
     margin-top: 80px;
 }
-.why_item_img::after{
+.why_item{
+    position: relative;
+    padding-left: 85px;
+}
+.why_item::before{
     position: absolute;
     content: "";
-    top: ;
-    left: ;
+    top: 0;
+    left: 0;
     right: calc(50% - 10px);
     width: 66px;
-    height: 95px;
+    height: 96px;
     background-image: url('../imgs/why.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*<section class="Section type">
-                        <h1 class="type_title">Pay as you go — pay only for<br> the traffic you <span class="type_green">actually use</span></h1>
-                        <p class="type_text">No verification needed. All it takes is 1 minute to sign up <br> and start using our proxies.</p>
-                        <div class="type_item"></div>
-                    <div class="type_img">
-                        <p1 class="type_img_traf">640 Gb</p1>
-                        <p2 class="type_img_pay">$1920</p2>
-                    </div>
-            </section>*/
+.why_item_desk{
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #202027;
+}
+
+
+
+
+
 .section_type{
     width: 1200px;
     background-color: #c2c7ce ;
@@ -723,41 +670,37 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 .type_item::after{
     position: absolute;
-    content: "";
-    top: ;
-    left: ;
-    right: ;
-    bottom: ;
+    content: "640 Gb";
+    top: 0;
+    left: calc(50% - 13px);
+    right: 0;
+    bottom: 0;
     width: 72px;
     height: 26px;
-    background-image: url('../imgs/gb.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .type_item::before{
     position: absolute;
-    content: "";
-    top: ;
-    left: ;
-    right: ;
+    content: "$1920";
+    top: 0;
+    left: 0;
     width: 62px;
     height: 26px;
-    background-image: url('../imgs/bucks.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .type_img{
     background-image: url('../imgs/proggs.svg');
-    Width: ;
-    Height: ;
+    Width: 0;
+    Height: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
 .type_img_traf{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -773,6 +716,56 @@ header{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
+     text-align: center;
+    color:#7C4EFF;
+}
+/*   <section class="section_location">
+                        <h1 class="location_title">Worldwide Coverage</h1>
+                        <div class="location_img"></div>
+                    <ui class="location_main">
+                        <h2 class="location_title_tx">Reliable Residential Proxies available in<span class="location_green"> 150+ countries</span> worldwide</h2>
+                        <p class="location_text">And we are constantly adding new locations</p>
+                    </ui>
+</section>*/
+.section_location{
+    margin-top: 200px;
+}
+.location_title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 51px;
     text-align: center;
-    color: #7C4EFF;
+    color: #202027;
+}
+.location_img{
+    background-image: url('../imgs/world.svg');
+    width: 497px;
+    height: 492px;
+    border: 1px solid;
+    border-image-source: radial-gradient(83.05% 83.05% at 80.75% 10.55%, #FF4F6E 0%, #DB00FF 23.96%, #8F00FF 50%, #7C4EFF 76.56%, #5B30D6 100%);
+}
+.location_title_tx{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #485064;
+}
+.location_green{
+    color: #16E09E;
+}
+.location_text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center; 
+    color: #202027;
 }
