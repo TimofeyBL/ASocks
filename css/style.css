@@ -4,6 +4,8 @@
 
 html{
     background-color: #F9FBFD;
+
+    overflow-x: hidden;
 }
 
 body{
@@ -931,104 +933,189 @@ header{
     user-select: none;
     cursor: pointer;
 }
+
+
 .footer{
-    width: 1440px;
+    width: 100vw;
+
+    margin-left: calc((100vw - 1440px) / -2);
     margin-top: 200px;
-    background: rgba(32, 32, 39, 1);
-    padding: 48px 120px;
-}
-.footer_nav-logo{
-    width: 59px;
-    height: 50px;
-    background-image: url('../imgs/logo.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    padding: 48px calc((100vw - 1200px) / 2);
+
+    box-sizing: border-box; 
+
+    background-color: #202027;
 }
 
-.footer_nav-lang{
-    width: 104px;
-    height: 22px;
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_content-image{
+    width: 177px;
+    height: 50px;
+
     background-image: url('../imgs/suck.svg');
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
-.footer_contacts a{
-    font-family: 'Montserrat', sans-serif;
+
+.footer_content-links{
+    margin-top: 38px;
+    padding-left: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_content-link{
+    position: relative;
+
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    text-decoration: none;
-    display: flex;
-    padding-top: 24px;
+    background-repeat: no-repeat;
     color: #C7CBD6;
+    
 }
-/* .features_grid{
-    width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    margin-top: 80px; */
-.footer_company{
+
+.footer_content-link::before{
+    position: absolute;
+    top: calc(50% - 12px);
+    left: -35px;
+    border-radius: 8px;
+    content: "";
+    width: 24px;
+    height: 24px;
+
+    opacity: 0.4;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_content-link__email::before{
+    background-image: url('../imgs/asock.svg');
+    
+}
+
+.footer_content-link__phone::before{
+    background-image: url('../imgs/phone.svg');
+}
+.footer_content-link__telegram::before{
+    background-image: url('../imgs/supT.svg');
+}
+
+.footer_content-right{
+    display: flex;
+    justify-content: space-between;
+
+    gap: 120px;
+}
+
+.footer_content-list{
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.footer_content-title{
     font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    grid-auto-rows: repeat(3, 3fr);
-    grid-gap: 18px;
-}
-.footer_title{
-    font-family: 'TT Hoves', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 24px;
+
     color: #A0A6B1;
+
+    margin-bottom: 6px;
 }
-.footer_help{
+
+.footer_content-item{
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #F9FBFD;
 }
-.footer_sock{
-    font-family: 'Montserrat';
+
+
+
+.footer_info{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 110px;
+}
+
+.footer_info::before{
+    position: absolute;
+    top: -30px;
+    left: 0;
+
+    width: 100%;
+    height: 0px;
+
+    content: "";
+
+    border: 1px solid rgba(72, 80, 100, 0.2);
+}
+
+.footer_info-text{
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #727D99;
 }
-.footer_end{
+
+.footer_info-list{
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.footer_info-item{
     width: 32px;
     height: 32px;
-    display: flex;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    background: #485064;
+
+    border-radius: 8px;
 }
-.footer_twit{
-    background-image: url('../imgs/twitter.svg');
+.footer_info-item__twitter {
+    background-image: url('../imgs/twi.svg');
 }
-.footer_face{
-    background-image: url('../imgs/face.svg');
+.footer_info-item__facebook {
+    background-image: url('../imgs/fa.svg');
 }
-.footer_ins{
-    background-image: url('../imgs/inst.svg');
+.footer_info-item__insta {
+    background-image: url('../imgs/in.svg');
 }
-.footer_mak{
-    background-image: url('../imgs/maga.svg');
+.footer_info-item__mago {
+    background-image: url('../imgs/mago.svg');
 }
-.footer_teleg{
-    background-image: url('../imgs/teleg.svg');
+.footer_info-item__telegram {
+    background-image: url('../imgs/tel.svg');
 }
-.footer_disc{
-    background-image: url('../imgs/disc.svg');
+.footer_info-item__discord {
+    background-image: url('../imgs/dis.svg');
 }
